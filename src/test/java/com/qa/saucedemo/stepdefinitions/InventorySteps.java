@@ -1,14 +1,15 @@
 package com.qa.saucedemo.stepdefinitions;
 
-import com.qa.saucedemo.utils.TestContext;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import org.testng.Assert;
-
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+
+import org.testng.Assert;
+
+import com.qa.saucedemo.utils.TestContext;
+
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class InventorySteps {
 
@@ -17,7 +18,7 @@ public class InventorySteps {
         Assert.assertEquals(TestContext.get().getInventoryPage().getDisplayedItemCount(), expectedCount);
     }
 
-    @Given("the user adds {string} to the cart")
+   
     @When("the user adds {string} to the cart")
     public void the_user_adds_item_to_the_cart(String itemName) {
         TestContext.get().getInventoryPage().addItemToCartByName(itemName);

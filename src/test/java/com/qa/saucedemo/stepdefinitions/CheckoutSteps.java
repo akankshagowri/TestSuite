@@ -1,14 +1,15 @@
 package com.qa.saucedemo.stepdefinitions;
 
+import org.testng.Assert;
+
 import com.qa.saucedemo.utils.TestContext;
-import io.cucumber.java.en.Given;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
 
 public class CheckoutSteps {
 
-    @Given("the user fills checkout information with first name {string}, last name {string}, postal code {string}")
+  
     @When("the user fills checkout information with first name {string}, last name {string}, postal code {string}")
     public void the_user_fills_checkout_information(String firstName, String lastName, String postalCode) {
         boolean hasEmptyField = firstName.isEmpty() || lastName.isEmpty() || postalCode.isEmpty();

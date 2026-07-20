@@ -13,3 +13,6 @@ allure-results/
 allure-report/
 screenshots/
 *.png
+target/
+.bloop/
+.metals/

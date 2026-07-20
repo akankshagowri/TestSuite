@@ -1,14 +1,16 @@
 package com.qa.saucedemo.stepdefinitions;
 
+import org.testng.Assert;
+
 import com.qa.saucedemo.hooks.Hooks;
 import com.qa.saucedemo.pages.LoginPage;
 import com.qa.saucedemo.utils.ConfigReader;
 import com.qa.saucedemo.utils.DriverFactory;
 import com.qa.saucedemo.utils.TestContext;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.testng.Assert;
 
 public class LoginSteps {
 
@@ -25,7 +27,7 @@ public class LoginSteps {
                 loginPage.loginAs(username, ConfigReader.get("password.valid")));
     }
 
-    @Given("the user logs in with username {string} and a valid password")
+    
     @When("the user logs in with username {string} and a valid password")
     public void the_user_logs_in_with_valid_password(String username) {
         LoginPage loginPage = TestContext.get().getLoginPage();

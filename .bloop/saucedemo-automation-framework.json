@@ -84,10 +84,8 @@
         "java": {
             "options": [
                 "-g",
-                "-target",
-                "11",
-                "-source",
-                "11",
+                "--release",
+                "17",
                 "-encoding",
                 "UTF-8"
             ]

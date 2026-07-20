@@ -31,7 +31,7 @@ Reports land in:
 
 | Requirement | Check it | Get it |
 |---|---|---|
-| Java 11+ (JDK, not just JRE) | `java -version` | https://adoptium.net |
+| Java 17 (JDK, not just JRE) | `java -version` | https://adoptium.net |
 | Maven 3.8+ | `mvn -version` | https://maven.apache.org/download.cgi |
 | Google Chrome installed | open Chrome → `⋮` → Help → About | https://www.google.com/chrome |
 
@@ -41,23 +41,23 @@ Manager handles it. You only need Chrome itself present on the machine.
 ### Installing prerequisites by OS
 
 **Windows**
-1. Install JDK 11+ from Adoptium (the `.msi` installer sets `JAVA_HOME` for you).
+1. Install JDK 17 from Adoptium (the `.msi` installer sets `JAVA_HOME` for you).
 2. Install Maven: unzip the binary archive, add its `bin` folder to your `PATH`, then set a `MAVEN_HOME` environment variable pointing at the unzipped folder.
 3. Confirm both with `java -version` and `mvn -version` in a **new** terminal window (environment variables only apply to terminals opened after you set them).
 
 **macOS**
 ```bash
-brew install openjdk@11 maven
+brew install openjdk@17 maven
 ```
 If `java -version` doesn't pick it up after installing via Homebrew, add this to your shell profile (`~/.zshrc` or `~/.bash_profile`):
 ```bash
-export JAVA_HOME=$(/usr/libexec/java_home -v11)
+export JAVA_HOME=$(/usr/libexec/java_home -v17)
 ```
 
 **Linux (Debian/Ubuntu)**
 ```bash
 sudo apt update
-sudo apt install openjdk-11-jdk maven
+sudo apt install openjdk-17-jdk maven
 ```
 
 ---
@@ -222,7 +222,4 @@ This project doesn't ship a Maven Wrapper — install Maven directly per the OS 
   drifting on the live SauceDemo site, not the framework's architecture.
 - No API layer, no visual regression, no Selenium Grid for true parallel
   cross-machine execution — see `docs/TEST_SUITE.md` §6 for what a v2 would add.
-- 40 scenarios is solid breadth for a portfolio piece, not full coverage of
-  a real production app — be ready to explain what you'd add next, that's
-  usually the actual interview question.
 "# TestSuite" 

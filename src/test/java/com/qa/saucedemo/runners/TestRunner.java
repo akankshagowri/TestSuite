@@ -1,16 +1,20 @@
 package com.qa.saucedemo.runners;
 
+import org.testng.annotations.DataProvider;
+
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 /**
  * Master runner. Executes every scenario in src/test/resources/features.
- * Parallel execution is configured via cucumber.properties
- * (cucumber.execution.parallel.enabled=true) and testng.xml thread-count.
+ * Scenarios are executed sequentially while framework state issues are diagnosed.
  */
 @CucumberOptions(
         features = "src/test/resources/features",
-        glue = {"com.qa.saucedemo.stepdefinitions", "com.qa.saucedemo.hooks"},
+        glue = {
+                "com.qa.saucedemo.stepdefinitions",
+                "com.qa.saucedemo.hooks"
+        },
         plugin = {
                 "pretty",
                 "html:target/cucumber-reports/cucumber.html",
@@ -22,7 +26,7 @@ import io.cucumber.testng.CucumberOptions;
 public class TestRunner extends AbstractTestNGCucumberTests {
 
     @Override
-    @org.testng.annotations.DataProvider(parallel = true)
+    @DataProvider(parallel = false)
     public Object[][] scenarios() {
         return super.scenarios();
     }
