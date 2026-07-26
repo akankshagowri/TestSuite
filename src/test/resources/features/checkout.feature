@@ -53,6 +53,7 @@ Feature: Checkout
 
   @regression
   Scenario: Cancel from checkout overview returns to inventory
+    Given the user fills checkout information with first name "John", last name "Doe", postal code "10001"
     When the user cancels checkout from the overview page
     Then the user should be redirected to the inventory page
 
