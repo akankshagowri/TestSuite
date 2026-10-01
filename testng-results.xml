@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-10-01T23:27:31 IST" name="Surefire suite" finished-at="2026-10-01T23:27:37 IST" duration-ms="6173">
+    <groups>
+    </groups>
+    <test started-at="2026-10-01T23:27:31 IST" name="Surefire test" finished-at="2026-10-01T23:27:37 IST" duration-ms="6173">
+      <class name="com.qa.PostApiTest">
+        <test-method signature="createChecksEchoNotPersistence()[pri:0, instance:com.qa.PostApiTest@5bfa9431]" started-at="2026-10-01T23:27:31 IST" name="createChecksEchoNotPersistence" finished-at="2026-10-01T23:27:36 IST" duration-ms="4995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createChecksEchoNotPersistence -->
+        <test-method signature="deleteChecksContract()[pri:0, instance:com.qa.PostApiTest@5bfa9431]" started-at="2026-10-01T23:27:31 IST" name="deleteChecksContract" finished-at="2026-10-01T23:27:36 IST" duration-ms="4950" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteChecksContract -->
+        <test-method signature="filtersReturnOnlyRequestedOwner()[pri:0, instance:com.qa.PostApiTest@5bfa9431]" started-at="2026-10-01T23:27:36 IST" name="filtersReturnOnlyRequestedOwner" finished-at="2026-10-01T23:27:36 IST" duration-ms="590" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filtersReturnOnlyRequestedOwner -->
+        <test-method signature="getPostChecksSchemaAndContent()[pri:0, instance:com.qa.PostApiTest@5bfa9431]" started-at="2026-10-01T23:27:36 IST" name="getPostChecksSchemaAndContent" finished-at="2026-10-01T23:27:36 IST" duration-ms="381" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getPostChecksSchemaAndContent -->
+        <test-method signature="missingResourceReturns404()[pri:0, instance:com.qa.PostApiTest@5bfa9431]" started-at="2026-10-01T23:27:36 IST" name="missingResourceReturns404" finished-at="2026-10-01T23:27:36 IST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- missingResourceReturns404 -->
+        <test-method signature="patchChecksUpdatedResponse()[pri:0, instance:com.qa.PostApiTest@5bfa9431]" started-at="2026-10-01T23:27:36 IST" name="patchChecksUpdatedResponse" finished-at="2026-10-01T23:27:37 IST" duration-ms="562" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- patchChecksUpdatedResponse -->
+      </class> <!-- com.qa.PostApiTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

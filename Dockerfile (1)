@@ -1,0 +1,7 @@
+FROM mcr.microsoft.com/playwright:v1.58.2-noble
+WORKDIR /workspace
+COPY . .
+RUN cd qa/playwright && npm ci
+
+WORKDIR /workspace/qa/playwright
+CMD ["npm", "test"]

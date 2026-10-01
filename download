@@ -1,0 +1,6 @@
+.git
+**/node_modules
+**/target
+**/playwright-report
+**/test-results
+**/__pycache__

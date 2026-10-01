@@ -1,0 +1,20 @@
+<testsuites id="" name="" tests="8" failures="0" skipped="0" errors="0" time="18.33668">
+<testsuite name="saucedemo.spec.ts" timestamp="2026-10-01T17:58:47.546Z" hostname="chromium" tests="8" failures="0" skipped="0" time="21.086" errors="0">
+<testcase name="locked account is rejected" classname="saucedemo.spec.ts" time="5.364">
+</testcase>
+<testcase name="fresh context starts with an empty cart" classname="saucedemo.spec.ts" time="5.539">
+</testcase>
+<testcase name="add and remove a product" classname="saucedemo.spec.ts" time="1.391">
+</testcase>
+<testcase name="sort prices from low to high" classname="saucedemo.spec.ts" time="1.402">
+</testcase>
+<testcase name="checkout requires firstName" classname="saucedemo.spec.ts" time="1.791">
+</testcase>
+<testcase name="checkout requires lastName" classname="saucedemo.spec.ts" time="1.773">
+</testcase>
+<testcase name="checkout requires postalCode" classname="saucedemo.spec.ts" time="1.987">
+</testcase>
+<testcase name="complete purchase verifies item, total and confirmation" classname="saucedemo.spec.ts" time="1.839">
+</testcase>
+</testsuite>
+</testsuites>
